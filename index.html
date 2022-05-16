@@ -1,85 +1,193 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
   <title>CodePen - Trello Clone</title>
+
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
+
 <body>
-<!-- partial:index.partial.html -->
-<div id="main">
-  <div class="list">
-    <div class="title removable editable">Backlog</div>
-    <div class="content">
-      <div class="card removable editable">Improve the visual aesthetics of the app and interfaces for a friendlier impact on the users.</div>
-      <div class="card removable editable" style="">Develop a marketing campaign to announce the product and get more users stories for future improvements in the project.</div>
-    </div>
-    <div class="add-card editable">Add another card</div>
-  </div>
+  <!-- partial:index.partial.html -->
 
-  <div class="list">
-    <div class="title removable editable">current Sprint Backlog</div>
-    <div class="content">
-      <div class="card removable editable">add to the app accesibility options for people with different needs (deaft, blind, etc.)</div>
+  <div id="main" style="background-color:#28C8DA;">
+
+    <div class="list">
+      <div class="title removable editable">Backlog</div>
+      <div class="content">
+        <div class="card removable editable"><ul class="fa-ul">
+          <li><i class="fa-li fa fa-square"></i>Improve the visual aesthetics of the app and interfaces for a friendlier
+              impact on the users</li>
+        </ul></div>
+        <div class="card removable editable" style=""><ul class="fa-ul">
+          <li><i class="fa-li fa fa-square"></i>Develop a marketing campaign to announce the product and get more
+              users stories for future improvements in the project</li>
+        </ul></div>
+      </div>
+      <div class="add-card editable">Add another card</div>
     </div>
 
+    <div class="list">
+      <div class="title removable editable">Current Sprint Backlog</div>
+      <div class="content">
+        <div class="card removable editable"><ul class="fa-ul">
+          <li><i class="fa-li fa fa-square"></i>Add to the app accesibility options for people with different needs
+              (deaft, blind, etc.)</li>
+        </ul></div>
+      </div>
+
+
+      <div class="add-card editable">Add another card</div>
+    </div>
+
+    <div class="list">
+      <div class="title removable editable">In Progress</div>
+      <div class="content">
+        <div class="card removable editable">  <ul class="fa-ul">
+          <li><i class="fa-li fa fa-spinner fa-spin"></i>Build user app that include the following info: Sit availability, stand
+                availability, gps info. bus route info</li>
+        </ul></div>
+      </div>
+      <div class="card removable editable" style="">  <ul class="fa-ul">
+        <li><i class="fa-li fa fa-spinner fa-spin"></i>Create an app for the driver for him to be able to manually add or
+            remove people to the bus count. and also reset the count data if it's needed</li>
+      </ul></div>
+
+      <div class="add-card editable">Add another card</div>
+    </div>
+
+    <div class="list">
+      <div class="title removable editable">Review</div>
+      <div class="content">
+        <div class="card removable editable">  <ul class="fa-ul">
+          <li><i class="fa-li fa fa-spinner fa-spin"></i>Connection to the bus gps: create a map of the bus stops and connect to
+                the GPS to perform a reading. if the bus is at least 50m from the stop or farther and send Boolean data for
+                the main program</li>
+        </ul></div>
+      </div>
+      <div class="card removable editable" style="">  <ul class="fa-ul">
+        <li><i class="fa-li fa fa-spinner fa-spin"></i>Program develop: if the passenger count doesn't match the sensors
+            count. perform gps protocol if the bus is far from the stop repeat the reading. if its near, set the sensors
+            data as true. provide data to developers for future develop</li>
+      </ul></div>
+      <div class="card removable editable" style="">  <ul class="fa-ul">
+        <li><i class="fa-li fa fa-spinner fa-spin"></i>Program develop: using previous documentation if the data of the
+            sensors matches the counted passenger data . Print the data online for the users</li>
+      </ul></div>
+      <div class="card removable editable" style="">  <ul class="fa-ul">
+        <li><i class="fa-li fa fa-spinner fa-spin"></i>Add to the code a manual function that is able to add or remove
+            passengers in the count inside the passengers count system. this function will also be able to reset the count
+            system( this will set the sensors data as true)</li>
+      </ul></div>
+      <div class="add-card editable">Add another card</div>
+    </div>
+    <div class="list">
+      <div class="title removable editable">Done</div>
+      <div class="content">
+        <div class="card removable editable" style="">
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-check-square"></i>Look up in the market to find affordable pressure sensors for
+              the project</li>
+
+          </ul>
+        </div>
+        <div class="card removable editable" style="">
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-check-square"></i>Look up in the market to find affordable Infrared sensors for
+              the project</li>
+
+          </ul>
+        </div>
+        <div class="card removable editable" style="">
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-check-square"></i>Instal a ticket and card reader in the back door of the bus</li>
+
+          </ul>
+        </div>
+        <div class="card removable editable" style="">
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-check-square"></i>Create a code that take the data of number of passenger in and
+              outside the bus. and then give the output of the number of passengers in the bus</li>
+
+          </ul>
+        </div>
+        <div class="card removable editable" style="">
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-check-square"></i>Install the pressure sensors in the buses</li>
+
+          </ul>
+        </div>
+        <div class="card removable editable" style="">
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-check-square"></i>Program the pressure sensor in order to only take reading for
+              20kg or more in the seats</li>
+
+          </ul>
+        </div>
+        <div class="card removable editable" style="">
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-check-square"></i>Test the pressure sensors individually, then automatize a piece
+              of code to provide data of every read performed</li>
+
+          </ul>
+        </div>
+        <div class="card removable editable" style="">
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-check-square"></i>Install the Infrared sensors in the buses</li>
+
+          </ul>
+        </div>
+        <div class="card removable editable" style="">
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-check-square"></i>Program the infrared sensor in order to only take readings if
+              the passenger stands for ten seconds in the same spot</li>
+
+          </ul>
+        </div>
+        <div class="card removable editable" style="">
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-check-square"></i>Test the Infrared sensors for each standing passenger, then
+              automatize a piece of code to provide data of every read performed</li>
+
+          </ul>
+        </div>
+        <div class="card removable editable">
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-check-square"></i>Repeat the readings every 3 minutes and send data with, the
+              infrared count, the pressure sensor count, the sum of bouth numbers, and the failing devices</li>
+
+          </ul>
+        </div>
+      </div>
+      <div class="add-card editable">Add another card</div>
+    </div>
+    <div class="list">
+      <div class="title removable editable">Aditional Resources</div>
+      <div class="content">
+
+        <div class="card removable editable">
+          <ul class="fa-ul">
+            <li><i class="fa-li fa fa-square"></i>Add Special info for wheel chair space</li>
+          </ul>
+        </div>
+
+      </div>
+
+
+      <div class="add-card editable">Add another card</div>
+    </div>
+    <div class="add-list">
+
+      <div class="title editable">Add another list</div>
+    </div>
+    <!-- partial -->
+    <script src='https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js'></script>
+    <script src="./script.js"></script>
     
-    <div class="add-card editable">Add another card</div>
-  </div>
-  
-<div class="list">
-  <div class="title removable editable">In Progress</div>
-  <div class="content">
-    <div class="card removable editable">Build user app that include the following info: Sit availability, stand availability, gps info. bus route info.</div>
-  </div>
-  <div class="card removable editable" style="">Create an app for the driver for him to be able to manually add or remove people to the bus count. and also reset the count data if it's needed.</div>
-  
-  <div class="add-card editable">Add another card</div>
-</div>
-
-<div class="list">
-  <div class="title removable editable">Review</div>
-  <div class="content">
-    <div class="card removable editable">Connection to the bus gps: create a map of the bus stops and connect to the GPS to perform a reading. if the bus is at least 50m from the stop or farther and send Boolean data for the main program</div>
-  </div>
-  <div class="card removable editable" style="">Program develop: if the passenger count doesn't match the sensors count. perform gps protocol if the bus is far from the stop repeat the reading. if its near, set the sensors data as true. provide data to developers for future develop</div>
-  <div class="card removable editable" style="">Program develop: using previous documentation if the data of the sensors matches the counted passenger data . Print the data online for the users</div>
-  <div class="card removable editable" style="">Add to the code a manual function that is able to add or remove passengers in the count inside the passengers count system. this function will also be able to reset the count system( this will set the sensors data as true)</div>
-  <div class="add-card editable">Add another card</div>
-</div>
-<div class="list">
-  <div class="title removable editable">Done</div>
-  <div class="content">
-  <div class="card removable editable" style="">Look up in the market to find affordable pressure sensors for the project</div>
-  <div class="card removable editable" style="">Look up in the market to find affordable Infrared sensors for the project</div>
-  <div class="card removable editable" style="">Instal a ticket and card reader in the back door of the bus</div>
-  <div class="card removable editable" style="">Create a code that take the data of number of passenger in and outside the bus. and then give the output of the number of passengers in the bus</div>
-  <div class="card removable editable" style="">Install the pressure sensors in the buses</div>
-  <div class="card removable editable" style="">Program the pressure sensor in order to only take reading for 20kg or more in the seats</div>
-  <div class="card removable editable" style="">Test the pressure sensors individually, then automatize a piece of code to provide data of every read performed.</div>
-  <div class="card removable editable" style="">Install the Infrared sensors in the buses</div>
-  <div class="card removable editable" style="">Program the infrared sensor in order to only take readings if the passenger stands for ten seconds in the same spot</div>
-  <div class="card removable editable" style="">Test the Infrared sensors for each standing passenger, then automatize a piece of code to provide data of every read performed.</div>
-  <div class="card removable editable">Repeat the readings every 3 minutes and send data with, the infrared count, the pressure sensor count, the sum of bouth numbers, and the failing devices</div>
-  </div>
-  <div class="add-card editable">Add another card</div>
-</div>
-<div class="list">
-  <div class="title removable editable">Another list</div>
-  <div class="content">
-    <div class="card removable editable">Hello world!</div>
-  </div>
-
-  
-  <div class="add-card editable">Add another card</div>
-</div>
-<div class="add-list">
-  
-  <div class="title editable">Add another list</div>
-</div>
-<!-- partial -->
-  <script src='https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js'></script><script  src="./script.js"></script>
-
 </body>
+
 </html>
